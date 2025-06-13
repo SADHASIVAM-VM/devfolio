@@ -21,7 +21,7 @@ function App() {
    {!loading?
    (
      <div className="flex items-center justify-center h-[600px] ">
-        <img src="/src/assets/loading.svg" className='w-20' alt="" />
+        <img src="https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/loading.svg" className='w-20' alt="" />
     </div>
     
    )
