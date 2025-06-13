@@ -6,7 +6,7 @@ const Projects = () => {
   {
     title: "Lost and Found",
     description: "Lost and Found is a web-based platform that helps users report, search for, and recover lost items. It allows users to post lost or found item details, browse listings by category or location, and communicate securely with item owners or finders.",
-    image: "src/assets/find.png",
+    image: "/src/assets/find.png",
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Supabase", "shadCN","React"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -14,7 +14,7 @@ const Projects = () => {
   {
     title: "HireOne. ",
     description: "HireOne is a job-finding and recruitment platform focused on the creator economy, especially YouTube professionals. It connects content creators, editors, marketers, and other media talents with recruiters looking for skilled individuals in video production and digital media.",
-    image: "src/assets/hireone.png",
+    image: "/src/assets/hireone.png",
     technologies: ["React", "Express.js", "PostgreSQL", "Redux", "RayzonPay", "Supabase", "shadCN","React"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -22,7 +22,7 @@ const Projects = () => {
   {
     title: "CoWrite",
     description: "CoWrite is a modern, responsive blog website that allows users to read and publish articles across various categories. It features a clean layout, user-friendly navigation, and supports post creation, editing, and commenting. ",
-    image: "src/assets/cowrite.png",
+    image: "/src/assets/cowrite.png",
     technologies: ["React", "Quill", "Cloudinary", "Tailwind CSS","RayzonPay", "Supabase", "shadCN","React"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "https://co-write-d288.vercel.app/"
@@ -30,7 +30,7 @@ const Projects = () => {
   {
     title: "Aura",
     description: "Aura is a full-featured eCommerce platform with a modern user interface and integrated admin dashboard. Users can browse products, manage their cart, and place orders, while admins can add, update, or remove products, track orders, and manage users through a secure backend.",
-    image: "src/assets/aura.png",
+    image: "/src/assets/aura.png",
     technologies: ["RayzonPay", "Supabase", "JWT","React","RayzonPay", "Supabase", "shadCN","React","Express" ],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -38,7 +38,7 @@ const Projects = () => {
   {
     title: "Profolio",
     description: "Personal portfolio website to showcase projects, skills, and contact info with smooth animations.",
-    image: "src/assets/cowrite.png",
+    image: "/src/assets/cowrite.png",
     technologies: ["React.js", "Framer Motion", "Tailwind CSS"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "https://4k-one.vercel.app/"
@@ -46,7 +46,7 @@ const Projects = () => {
   {
     title: "RentalX",
     description: "A car rental app frontend with sleek UI and responsive design using React components.",
-    image: "src/assets/rental.png",
+    image: "/src/assets/rental.png",
     technologies: ["React", "Styled Components", "React Router"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -54,7 +54,7 @@ const Projects = () => {
   {
     title: "Adopet",
     description: "Pet adoption landing page featuring available pets, adoption info, and responsive design.",
-    image: "src/assets/adopet.png",
+    image: "/src/assets/adopet.png",
     technologies: ["React", "CSS Modules", "React Router"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -62,7 +62,7 @@ const Projects = () => {
   {
     title: "Git Profile",
     description: "GitHub Profile Fetcher is a React-based app that retrieves and displays GitHub user profiles using the GitHub API. It allows users to enter a username and fetch details like avatar, bio, repositories, and followers with a simple action.",
-    image: "src/assets/github.png",
+    image: "/src/assets/github.png",
     technologies: ["React","Api", "Tailwind", "Framer Motion"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
