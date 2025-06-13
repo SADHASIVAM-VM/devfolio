@@ -13,7 +13,11 @@ const Projects = () => {
   {
     title: "Lost and Found",
     description: "Lost and Found is a web-based platform that helps users report, search for, and recover lost items. It allows users to post lost or found item details, browse listings by category or location, and communicate securely with item owners or finders.",
+<<<<<<< HEAD
     image: p1,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/find.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Supabase", "shadCN","React"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -21,7 +25,11 @@ const Projects = () => {
   {
     title: "HireOne. ",
     description: "HireOne is a job-finding and recruitment platform focused on the creator economy, especially YouTube professionals. It connects content creators, editors, marketers, and other media talents with recruiters looking for skilled individuals in video production and digital media.",
+<<<<<<< HEAD
     image:p2,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/hireone.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React", "Express.js", "PostgreSQL", "Redux", "RayzonPay", "Supabase", "shadCN","React"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -29,7 +37,11 @@ const Projects = () => {
   {
     title: "CoWrite",
     description: "CoWrite is a modern, responsive blog website that allows users to read and publish articles across various categories. It features a clean layout, user-friendly navigation, and supports post creation, editing, and commenting. ",
+<<<<<<< HEAD
     image:p3,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/cowrite.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React", "Quill", "Cloudinary", "Tailwind CSS","RayzonPay", "Supabase", "shadCN","React"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "https://co-write-d288.vercel.app/"
@@ -37,7 +49,11 @@ const Projects = () => {
   {
     title: "Aura",
     description: "Aura is a full-featured eCommerce platform with a modern user interface and integrated admin dashboard. Users can browse products, manage their cart, and place orders, while admins can add, update, or remove products, track orders, and manage users through a secure backend.",
+<<<<<<< HEAD
     image: p4,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/aura.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["RayzonPay", "Supabase", "JWT","React","RayzonPay", "Supabase", "shadCN","React","Express" ],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -45,7 +61,11 @@ const Projects = () => {
   {
     title: "Profolio",
     description: "Personal portfolio website to showcase projects, skills, and contact info with smooth animations.",
+<<<<<<< HEAD
     image:p5,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/cowrite.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React.js", "Framer Motion", "Tailwind CSS"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "https://4k-one.vercel.app/"
@@ -53,7 +73,11 @@ const Projects = () => {
   {
     title: "RentalX",
     description: "A car rental app frontend with sleek UI and responsive design using React components.",
+<<<<<<< HEAD
     image: p6,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/rental.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React", "Styled Components", "React Router"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -61,7 +85,11 @@ const Projects = () => {
   {
     title: "Adopet",
     description: "Pet adoption landing page featuring available pets, adoption info, and responsive design.",
+<<<<<<< HEAD
     image: p7,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/adopet.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React", "CSS Modules", "React Router"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
@@ -69,7 +97,11 @@ const Projects = () => {
   {
     title: "Git Profile",
     description: "GitHub Profile Fetcher is a React-based app that retrieves and displays GitHub user profiles using the GitHub API. It allows users to enter a username and fetch details like avatar, bio, repositories, and followers with a simple action.",
+<<<<<<< HEAD
     image: p8,
+=======
+    image: "https://github.com/SADHASIVAM-VM/devfolio/blob/main/src/assets/github.png",
+>>>>>>> d00556f839fe50aa7f0797a7b15eb7cb30f031fe
     technologies: ["React","Api", "Tailwind", "Framer Motion"],
     github: "https://github.com/SADHASIVAM-VM",
     live: "#"
