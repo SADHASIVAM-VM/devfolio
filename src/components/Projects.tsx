@@ -1,12 +1,12 @@
 import { ExternalLink, Github, Sparkles } from 'lucide-react';
-import p1 from '../assets/find.png'
-import p2 from '../assets/hireone.png'
-import p3 from '../assets/cowrite.png'
-import p4 from '../assets/aura.png'
-import p5 from '../assets/folio.png'
-import p6 from '../assets/rental.png'
-import p7 from '../assets/adopet.png'
-import p8 from '../assets/github.png'
+import p1 from "../assets/find.png"
+import p2 from "../assets/hireone.png"
+import p3 from "../assets/cowrite.png"
+import p4 from "../assets/aura.png"
+import p5 from "../assets/folio.png"
+import p6 from "../assets/rental.png"
+import p7 from "../assets/adopet.png"
+import p8 from "../assets/github.png"
 
 const Projects = () => {
  const projects = [
