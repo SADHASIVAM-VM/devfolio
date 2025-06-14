@@ -7,12 +7,13 @@ import TechStack from './components/TechStack';
 import Contact from './components/Contact';
 import './styles/globals.css';
 import load from "./assets/loading.svg"
+import Experience from './components/Experience';
 function App() {
  const [loading, setLoading] = useState(false);
    useEffect(()=>{
     const loader = setTimeout(()=>{
       setLoading(true);
-    },3000)
+    },2000)
 
     return ()=> clearTimeout(loader)
   },[])
@@ -35,6 +36,7 @@ function App() {
         <Hero />
         <Projects />
         <About />
+        <Experience/>
         <TechStack />
         <Contact />
       </main>

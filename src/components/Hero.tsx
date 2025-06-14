@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Code, Zap, Rocket } from 'lucide-react';
+import resume from '../assets/resume/Sadha_Resume.pdf'
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -44,7 +45,7 @@ const Hero = () => {
                 Explore My Work
               </button>
               
-              <a href='src/assets/resume/Sadha_Resume.pdf' className="border border-cyan-400/50 text-cyan-400 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-cyan-400/10 hover:border-cyan-400 flex items-center justify-center">
+              <a href={resume} className="border border-cyan-400/50 text-cyan-400 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-cyan-400/10 hover:border-cyan-400 flex items-center justify-center">
                 <Code className="mr-2" size={20} />
                 View Resume
               </a>
