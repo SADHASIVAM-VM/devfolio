@@ -25,12 +25,12 @@ const Hero = () => {
                   SADHASIVAM
                 </span>
                 <br />
-                <i className="  text-gray-300 rounded-md text-xl">
+                <i className="  text-gray-300 rounded-md text-[16px] md:text-xl">
                   Full-Stack Developer / MERN-Stack
                 </i>
               </h1>
               
-              <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="tex-sm md:text-xl text-gray-300 leading-relaxed max-w-2xl">
                 Crafting innovative digital experiences with cutting-edge technology. 
                 Transforming ideas into reality through code, design, and endless curiosity.
               </p>
@@ -81,7 +81,7 @@ const Hero = () => {
                   <div className="text-purple-400 text-sm font-medium">MERN</div>
                 </div>
                 <div className="absolute top-1/4 -left-5 md:-left-12 glass-card rounded-xl p-4 animate-float-delayed">
-                  <div className="text-green-400 text-sm font-medium">cpp</div>
+                  <div className="text-green-400 text-sm font-medium">Redux</div>
                 </div>
               </div>
             </div>

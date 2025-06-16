@@ -86,7 +86,7 @@ const Projects = () => {
               Featured Projects
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-sm md:text-xl text-gray-300 max-w-2xl mx-auto">
             Explore my latest innovations in technology, from AI and machine learning to blockchain and quantum computing.
           </p>
         </div>

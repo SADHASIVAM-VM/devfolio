@@ -39,7 +39,7 @@ const Contact = () => {
               Let's Connect
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-sm md:text-xl  text-gray-300 max-w-2xl mx-auto">
             Ready to collaborate on the next big innovation? Let's build something extraordinary together.
           </p>
         </div>

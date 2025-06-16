@@ -13,6 +13,7 @@ Cloud
 const TechStack = () => {
   const technologies = [
   { name: "React", icon: <Code2 />, color: "text-cyan-400" },
+  { name: "Redux", icon: <Code2 />, color: "text-violet-400" },
   { name: "Next.js", icon: <Server />, color: "text-black dark:text-white" },
   { name: "Node.js", icon: <Server />, color: "text-green-500" },
   { name: "JavaScript", icon: <Code2 />, color: "text-yellow-400" },
@@ -43,7 +44,7 @@ const TechStack = () => {
               Tech Skills
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-sm md:text-xl  text-gray-300 max-w-2xl mx-auto">
           Learn. Build. Evolve.</p>
         </div>
 
