@@ -1,35 +1,33 @@
 import React, { useState } from 'react';
 import { Send, Mail, MapPin, Phone, Github, Linkedin, GlobeIcon } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+    const [state, handleSubmit] = useForm("xnnzzrwb");
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      // You would handle actual form submission here
-    }, 2000);
-  };
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false);
+  //     setFormData({ name: '', email: '', subject: '', message: '' });
+  //     // You would handle actual form submission here
+  //   }, 2000);
+  // };
 
+    if (state.succeeded) {
+      alert("message sent !")
+  }
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-3 md:px-6">
@@ -107,80 +105,101 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="glass-card p-4 md:p-8 rounded-xl">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm md:text-md text-gray-300 mb-2">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
-                    placeholder="Your Name"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm md:text-md text-gray-300 mb-2">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm md:text-md text-gray-300 mb-2">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
-                  placeholder="Project Collaboration"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm md:text-md text-gray-300 mb-2">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 resize-none"
-                  placeholder="Tell me about your project idea..."
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full text-sm md:text-md bg-gradient-to-r  from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25 hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-              >
-                {isSubmitting ? (
-                  <div className="animate-spin  rounded-full h-5 w-5 border-2 border-white"></div>
-                ) : (
-                  <>
-                    <Send className="mr-2" size={18} />
-                    Send Message
-                  </>
-                )}
-              </button>
-            </form>
+           
+             <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div className="col-span-1 md:col-span-2">
+          <label htmlFor="email" className="block text-sm md:text-md text-gray-300 mb-2">
+            Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
+            placeholder="you@example.com"
+          />
+          <ValidationError
+            prefix="Name"
+            field="name"
+            errors={state.errors}
+            className="text-red-500 mt-2 text-sm"
+          />
+        </div>
+        <div className="col-span-1 md:col-span-2">
+          <label htmlFor="email" className="block text-sm md:text-md text-gray-300 mb-2">
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
+            placeholder="you@example.com"
+          />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+            className="text-red-500 mt-2 text-sm"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="message" className="block text-sm md:text-md text-gray-300 mb-2">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows={6}
+          className="w-full bg-gray-800/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 resize-none"
+          placeholder="Tell me about your project..."
+        ></textarea>
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+          className="text-red-500 mt-2 text-sm"
+        />
+      </div>
+
+      <button
+        type="submit"
+        disabled={state.submitting}
+        className="w-full text-sm md:text-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25 hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+      >
+        {state.submitting ? (
+          <div className="animate-spin rounded-full h-5 w-5 border-2 border-white"></div>
+        ) : (
+          <>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="mr-2 h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 14h.01M16 10h.01M21 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8z" />
+            </svg>
+            Send Message
+          </>
+        )}
+      </button>
+
+      {state.succeeded && (
+        <p className="text-green-400 text-center mt-4">
+          Thanks! Your message has been sent.
+        </p>
+      )}
+    </form>
+
+
           </div>
         </div>
 
