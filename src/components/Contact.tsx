@@ -32,9 +32,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <div className="container mx-auto px-3 md:px-6">
+        <div className="text-center mb-6 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-6">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Let's Connect
             </span>
@@ -57,7 +57,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
-                    <p className="text-white">sadha4k@gmail.com</p>
+                    <p className="text-white text-sm">sadha4k@gmail.com</p>
                   </div>
                 </div>
                 
@@ -67,7 +67,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Phone</p>
-                    <p className="text-white">+91 8248586299</p>
+                    <p className="text-white text-sm">+91 8248586299</p>
                   </div>
                 </div>
                 
@@ -77,7 +77,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Location</p>
-                    <p className="text-white">chennai,Tamilnadu, IN</p>
+                    <p className="text-white text-sm">chennai,Tamilnadu, IN</p>
                   </div>
                 </div>
               </div>
@@ -106,11 +106,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card p-8 rounded-xl">
+          <div className="glass-card p-4 md:p-8 rounded-xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-gray-300 mb-2">Name</label>
+                  <label htmlFor="name" className="block text-sm md:text-md text-gray-300 mb-2">Name</label>
                   <input
                     type="text"
                     id="name"
@@ -124,7 +124,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-gray-300 mb-2">Email</label>
+                  <label htmlFor="email" className="block text-sm md:text-md text-gray-300 mb-2">Email</label>
                   <input
                     type="email"
                     id="email"
@@ -139,7 +139,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-gray-300 mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-sm md:text-md text-gray-300 mb-2">Subject</label>
                 <input
                   type="text"
                   id="subject"
@@ -153,7 +153,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
+                <label htmlFor="message" className="block text-sm md:text-md text-gray-300 mb-2">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -169,13 +169,13 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25 hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full text-sm md:text-md bg-gradient-to-r  from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25 hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
-                  <div className="animate-spin rounded-full h-5 w-5 border-2 border-white"></div>
+                  <div className="animate-spin  rounded-full h-5 w-5 border-2 border-white"></div>
                 ) : (
                   <>
-                    <Send className="mr-2" size={20} />
+                    <Send className="mr-2" size={18} />
                     Send Message
                   </>
                 )}
@@ -187,7 +187,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="mt-20 text-center">
           <div className="glass-card inline-block px-8 py-4 rounded-full">
-            <p className="text-gray-400">
+            <p className="text-gray-400 text-sm">
               © 2025 Sadha
             </p>
           </div>

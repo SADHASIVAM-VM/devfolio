@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <div>
          <h2 className="text-4xl md:text-5xl text-center font-bold mb-6">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent ">
+            <span className="text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent ">
               Experience
             </span>
           </h2>
@@ -34,10 +34,10 @@ const Experience = () => {
       <div key={index} className="project-card glass-card rounded-xl overflow-hidden group space-y-2  p-8 transition-all duration-500">
   <div className="flex items-center justify-between">
     <div className='flex justify-between items-center w-full'>
-      <h2 className="text-xl text-cyan-300 font-semibold">{e.companyName}</h2>
-  <div className="flex gap-2 items-center text-white/60">
-    <span><MapPin size={'16px'}/></span>
-    <p className='text-sm'>{e.location}</p>
+      <h2 className="text-sm md:text-xl text-cyan-300 font-semibold">{e.companyName}</h2>
+  <div className="flex gap-1 items-center text-white/60">
+    <span><MapPin size={'12px'}/></span>
+    <p className='text-xs md:text-sm'>{e.location}</p>
     
 </div>
     </div>
@@ -47,8 +47,8 @@ const Experience = () => {
 
     <p className="text-xs text-green-400">{e.period}</p>
   <div>
-    <h3 className="text-lg font-medium text-white/90 flex gap-2 items-center"><Briefcase className="w-6 text-white/60 p-1" />{e.role}</h3>
-    <ul className="mt-2 text-sm md:text-[16px] list-disc list-inside text-blue-200 space-y-3">
+    <h3 className="text-md md:text-xl font-medium text-white/90 flex gap-2 items-center"><Briefcase className="w-6 text-white/60 p-1" />{e.role}</h3>
+    <ul className="mt-2 text-xs lg:text-[16px] list-disc list-inside text-blue-200 leading-snug space-y-2 md:space-y-3">
       {e.description.split("\n").map((line, index) => (
         <li  key={index} className='list-none'>{line.trim()}</li>
       ))}

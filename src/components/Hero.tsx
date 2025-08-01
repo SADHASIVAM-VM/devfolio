@@ -25,12 +25,12 @@ const Hero = () => {
                   SADHASIVAM
                 </span>
                 <br />
-                <i className="  text-gray-300 rounded-md text-[16px] md:text-xl">
+                <i className="  text-blue-200 rounded-md text-[15px] md:text-[16px] md:text-xl">
                   Full-Stack Developer / MERN-Stack
                 </i>
               </h1>
               
-              <p className="tex-sm md:text-xl text-gray-300 leading-relaxed max-w-2xl">
+              <p className="text-sm md:text-xl text-gray-300 leading-relaxed max-w-2xl">
                 Crafting innovative digital experiences with cutting-edge technology. 
                 Transforming ideas into reality through code, design, and endless curiosity.
               </p>
@@ -39,13 +39,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToProjects}
-                className="glow-button bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25 hover:shadow-2xl flex items-center justify-center"
+                className="glow-button text-sm lg:text-[16px] bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25 hover:shadow-2xl flex items-center justify-center"
               >
-                <Rocket className="mr-2" size={20} />
+                <Rocket className="mr-2 " size={20} />
                 Explore My Work
               </button>
               
-              <a href={resume} className="border border-cyan-400/50 text-cyan-400 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-cyan-400/10 hover:border-cyan-400 flex items-center justify-center">
+              <a href={resume} className=" text-sm lg:text-[16px] border border-cyan-400/50 text-cyan-400 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-cyan-400/10 hover:border-cyan-400 flex items-center justify-center">
                 <Code className="mr-2" size={20} />
                 View Resume
               </a>

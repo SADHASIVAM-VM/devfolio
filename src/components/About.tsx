@@ -34,13 +34,13 @@ const About = () => {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-center text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   About Me
                 </span>
               </h2>
               
-              <div className="space-y-4 text-sm md:text-lg text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-xs sm:text-sm md:text-lg text-gray-300 leading-relaxed">
                 <p>
                I'm a passionate technologist with a deep curiosity for how things work — a curiosity that’s grown into a mission to build meaningful, future-forward tech. From AI and blockchain to quantum computing and immersive experiences, I love working at the edge of innovation and bringing advanced ideas into real-world applications. </p>
                 

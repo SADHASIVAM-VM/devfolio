@@ -79,15 +79,15 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <div className="container mx-auto px-3 md:px-6">
+        <div className="text-center mb-6 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
           <p className="text-sm md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Explore my latest innovations in technology, from AI and machine learning to blockchain and quantum computing.
+            Explore my latest innovations in technology, from thoughts to real application.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card glass-card rounded-xl overflow-hidden group hover:scale-105 transition-all duration-500"
+              className="project-card glass-card rounded-xl overflow-hidden group hover:border-gray-600 transition-all duration-500"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -126,20 +126,20 @@ const Projects = () => {
                   <Sparkles className="mr-2" size={16} />
                   {project.title}
                 </h3>
-                <p className="text-gray-300 mb-3 text-sm leading-relaxed line-clamp-3">
+                <p className="text-gray-300 mb-3 text-[12px] lg:text-[14px] leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-1">
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs border border-blue-500/30"
+                      className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full text-[10px] sm:text-sm border border-blue-500/30"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-gray-500/20 text-gray-400 rounded-full text-xs border border-gray-500/30">
+                    <span className="px-2 py-1 bg-gray-500/20 text-gray-400 rounded-full text-[10px] sm:text-sm  border border-gray-500/30">
                       +{project.technologies.length - 3}
                     </span>
                   )}
